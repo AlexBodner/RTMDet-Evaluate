@@ -60,7 +60,6 @@ def main():
     run_shell_command(["git", "clone", "https://github.com/cocodataset/cocoapi"])
     run_shell_command(["make"], working_directory="cocoapi/PythonAPI")
     run_shell_command(["python", "setup.py", "build_ext", "install"], working_directory="cocoapi/PythonAPI")
-    run_shell_command(["cd", ".."], working_directory="cocoapi/PythonAPI")
 
     os.mkdir("coco_dataset")
 
