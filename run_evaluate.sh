@@ -29,6 +29,8 @@ $VENV_PIP install -U openmim
 
 $VENV_PY -m mim install mmcv==2.0.0
 # Run script
+export MPLBACKEND=Agg
+export
 $VENV_PY main.py
   
 
