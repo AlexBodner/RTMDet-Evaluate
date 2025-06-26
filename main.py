@@ -57,7 +57,8 @@ def download_weight(config_name):
     )
 def main():
     #install coco api
-    run_shell_command(["git", "clone", "https://github.com/cocodataset/cocoapi"])
+    if not os.path.exists("cocoapi"):
+        run_shell_command(["git", "clone", "https://github.com/cocodataset/cocoapi"])
     run_shell_command(["make"], working_directory="cocoapi/PythonAPI")
     run_shell_command(["python", "setup.py", "build_ext", "install"], working_directory="cocoapi/PythonAPI")
 
