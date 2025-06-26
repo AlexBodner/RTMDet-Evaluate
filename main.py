@@ -150,10 +150,10 @@ def main():
             img_path = os.path.join(images_folder, file_name)
 
             # Load image with PIL
-            image = Image.open(img_path).convert("RGB")
+            #image = Image.open(img_path).convert("RGB")
 
             # Run inference
-            detections = run_on_image(model, image)
+            detections = run_on_image(model, img_path)
             result = detections[detections.confidence > CONFIDENCE_THRESHOLD]
             class_id = result.class_id.astype(int)
             xyxy = result.xyxy
