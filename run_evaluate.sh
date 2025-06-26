@@ -29,7 +29,7 @@ $VENV_PIP install -U openmim
 
 $VENV_PY -m mim install mmcv==2.0.0
 # Run script
-$VENV_PY run.py
+$VENV_PY main.py
   
 
 done

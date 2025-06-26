@@ -189,3 +189,6 @@ def main():
         cocoEval.summarize()
         # Print AP values only with 10f precision
         print_10f(cocoEval.stats)
+
+if __name__ == "__main__":
+    main()
