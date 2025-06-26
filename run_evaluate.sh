@@ -10,7 +10,7 @@ current_path=$(pwd)
 
 # Create virtual environment using virtualenv
 virtualenv .venv
-project_dir="$current_path/models/object_detection/$folder"
+project_dir="$current_path"
 
 # Define full paths
 venv_dir="$project_dir/.venv"
