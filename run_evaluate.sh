@@ -23,12 +23,6 @@ VENV_MIM="$venv_dir/bin/mim"
 $VENV_PY -m pip install --upgrade pip
 
 # Install dependencies
-$VENV_PIP install -r requirements_colab.txt
-
-# Upgrade pip
-$VENV_PY -m pip install --upgrade pip
-
-# Install dependencies
 $VENV_PIP install -r requirements.txt
 
 $VENV_PIP install -U openmim
